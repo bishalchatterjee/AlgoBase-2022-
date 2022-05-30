@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlgorithmsFragment"
+    android:id="@+id/frame_layout5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme_back">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="397dp"
+            android:layout_height="637dp"
+            android:layout_marginTop="100dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/algo_item_1" />
+
+                <include layout="@layout/algo_item_2" />
+
+                <include layout="@layout/algo_item_3" />
+
+                <include layout="@layout/algo_item_4" />
+
+                <include layout="@layout/algo_item_5" />
+
+                <include layout="@layout/algo_item_6" />
+
+                <include layout="@layout/algo_item_7" />
+
+                <include layout="@layout/algo_item_8" />
+
+                <include layout="@layout/algo_item_9" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="322dp"
+            android:layout_height="43dp"
+            android:fontFamily="@font/krona_one"
+            android:text="Algorithms"
+            android:textAlignment="gravity"
+            android:textColor="@color/theme_text"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.179"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.854" />
+
+        <ImageView
+            android:id="@+id/menu_iv"
+            android:layout_width="51dp"
+            android:layout_height="42dp"
+            android:src="@drawable/menu_vector"
+            android:tint="@color/theme_text"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.98"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.285" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="40dp"
+    android:layout_marginTop="100dp"
+    android:layout_marginEnd="40dp"
+    android:layout_marginBottom="100dp"
+    android:background="@drawable/thin_back_alt">
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="282dp"
+        android:layout_height="68dp"
+        android:background="@drawable/thin_border"
+        android:onClick="onClickEmail"
+        android:paddingStart="10dp"
+        android:paddingTop="20dp"
+        android:text="Contact Email : \nbishalc4300@gmail.com \n\n\n\n"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.319" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="283dp"
+        android:layout_height="61dp"
+        android:background="@drawable/thin_back_alt"
+        android:padding="20dp"
+        android:text=" My Social Handels  \n\n\n\n"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="72dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="68dp"
+        android:onClick="onClickLinkedIn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.028"
+        app:srcCompat="@drawable/linkedin" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="72dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="20dp"
+        android:onClick="onClickGitHub"
+        android:tint="@color/theme_text"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/github" />
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="onClickInstagram"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintEnd_toStartOf="@+id/imageView11"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/instagram" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="285dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/thin_back_alt"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.035" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

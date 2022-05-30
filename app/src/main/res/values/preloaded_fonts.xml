@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/actor</item>
+        <item>@font/anton</item>
+        <item>@font/arimo</item>
+        <item>@font/black_ops_one</item>
+        <item>@font/bungee</item>
+        <item>@font/carter_one</item>
+        <item>@font/graduate</item>
+        <item>@font/iceberg</item>
+        <item>@font/krona_one</item>
+        <item>@font/short_stack</item>
+        <item>@font/syncopate</item>
+        <item>@font/trade_winds</item>
+        <item>@font/vampiro_one</item>
+    </array>
+</resources>

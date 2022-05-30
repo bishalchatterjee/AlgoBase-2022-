@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AlgoBase</string>
+    //spinner array items
+    <string-array name="drowpdown1">
+        <item>[ ᴀʙᴏᴜᴛ ᴍᴇɴᴜ ]</item>
+        <item>Version</item>
+        <item>Developer Info</item>
+    </string-array>
+</resources>

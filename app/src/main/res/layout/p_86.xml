@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/p_26"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#100F0F"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/krona_one"
+                android:text="26. Maximum profit by buying and selling a share atmost twice."
+                android:textColor="#FAF2F2"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="372dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/quicksandlight"
+                android:gravity="bottom|right"
+                android:padding="10dp"
+                android:text="Medium"
+                android:textColor="#EFE9E9" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ProblemsFragment"
+    android:id="@+id/frame_layout1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme_back">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="322dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="44dp"
+            android:fontFamily="@font/krona_one"
+            android:text="DSA Problems"
+            android:textAlignment="gravity"
+            android:textColor="@color/theme_text"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollview3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.179"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.84" />
+
+        <ImageView
+            android:id="@+id/menu_iv"
+            android:layout_width="51dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/menu_vector"
+            android:tint="@color/theme_text"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.98"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.285" />
+
+        <ScrollView
+            android:id="@+id/scrollview3"
+            android:layout_width="match_parent"
+            android:layout_height="635dp"
+            android:fadeScrollbars="true"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:scrollbarStyle="insideOverlay"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Arrays [27 Problems]"
+                    android:fontFamily="@font/helveticalight"
+                    android:textSize="20dp"
+                    android:textStyle="italic|bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:shadowDy="@integer/material_motion_duration_long_1"
+                    android:background="@drawable/simple_back"
+                    android:textColor="@color/theme_text">
+                </TextView>
+
+
+                <include layout="@layout/p_1" />
+
+                <include layout="@layout/p_2" />
+
+                <include layout="@layout/p_3" />
+
+                <include layout="@layout/p_4" />
+
+                <include layout="@layout/p_5" />
+
+                <include layout="@layout/p_6" />
+
+                <include layout="@layout/p_7" />
+
+                <include layout="@layout/p_8" />
+
+                <include layout="@layout/p_9" />
+
+                <include layout="@layout/p_10" />
+
+                <include layout="@layout/p_11" />
+
+                <include layout="@layout/p_12" />
+
+                <include layout="@layout/p_13" />
+
+                <include layout="@layout/p_14" />
+
+                <include layout="@layout/p_15" />
+
+                <include layout="@layout/p_16" />
+
+                <include layout="@layout/p_17" />
+
+                <include layout="@layout/p_18" />
+
+                <include layout="@layout/p_19" />
+
+                <include layout="@layout/p_20" />
+
+                <include layout="@layout/p_21" />
+
+                <include layout="@layout/p_22" />
+
+                <include layout="@layout/p_23" />
+
+                <include layout="@layout/p_24" />
+
+                <include layout="@layout/p_25" />
+
+                <include layout="@layout/p_26" />
+
+                <include layout="@layout/p_27" />
+
+                <include layout="@layout/p_28" />
+
+                <include layout="@layout/p_29" />
+
+                <include layout="@layout/p_30" />
+
+                <include layout="@layout/p_31" />
+
+                <include layout="@layout/p_32" />
+
+                <include layout="@layout/p_33" />
+
+                <include layout="@layout/p_34" />
+
+                <include layout="@layout/p_35" />
+
+                <include layout="@layout/p_36" />
+
+                <include layout="@layout/p_37" />
+
+                <include layout="@layout/p_38" />
+
+                <include layout="@layout/p_39" />
+
+                <include layout="@layout/p_40" />
+
+                <include layout="@layout/p_41" />
+
+                <include layout="@layout/p_42" />
+
+                <include layout="@layout/p_43" />
+
+                <include layout="@layout/p_44" />
+
+                <include layout="@layout/p_45" />
+
+                <include layout="@layout/p_46" />
+
+                <include layout="@layout/p_47" />
+
+                <include layout="@layout/p_48" />
+
+                <include layout="@layout/p_49" />
+
+                <include layout="@layout/p_50" />
+
+                <include layout="@layout/p_51" />
+
+                <include layout="@layout/p_52" />
+
+                <include layout="@layout/p_53" />
+
+                <include layout="@layout/p_54" />
+
+                <include layout="@layout/p_55" />
+
+                <include layout="@layout/p_56" />
+
+                <include layout="@layout/p_57" />
+
+                <include layout="@layout/p_58" />
+
+                <include layout="@layout/p_59" />
+
+                <include layout="@layout/p_60" />
+
+                <include layout="@layout/p_61" />
+
+                <include layout="@layout/p_62" />
+
+                <include layout="@layout/p_63" />
+
+                <include layout="@layout/p_64" />
+
+                <include layout="@layout/p_65" />
+
+                <include layout="@layout/p_66" />
+
+                <include layout="@layout/p_67" />
+
+                <include layout="@layout/p_68" />
+
+                <include layout="@layout/p_69" />
+
+                <include layout="@layout/p_70" />
+
+                <include layout="@layout/p_71" />
+
+                <include layout="@layout/p_72" />
+
+                <include layout="@layout/p_73" />
+
+                <include layout="@layout/p_74" />
+
+                <include layout="@layout/p_75" />
+
+                <include layout="@layout/p_76" />
+
+                <include layout="@layout/p_77" />
+
+                <include layout="@layout/p_78" />
+
+                <include layout="@layout/p_79" />
+
+                <include layout="@layout/p_80" />
+
+                <include layout="@layout/p_81" />
+
+                <include layout="@layout/p_82" />
+
+                <include layout="@layout/p_83" />
+
+                <include layout="@layout/p_84" />
+
+                <include layout="@layout/p_85" />
+
+                <include layout="@layout/p_86" />
+
+                <include layout="@layout/p_87" />
+
+                <include layout="@layout/p_88" />
+
+                <include layout="@layout/p_89" />
+
+                <include layout="@layout/p_90" />
+
+                <include layout="@layout/p_91" />
+
+                <include layout="@layout/p_92" />
+
+                <include layout="@layout/p_93" />
+
+                <include layout="@layout/p_94" />
+
+                <include layout="@layout/p_95" />
+
+                <include layout="@layout/p_96" />
+
+                <include layout="@layout/p_97" />
+
+                <include layout="@layout/p_98" />
+
+                <include layout="@layout/p_99" />
+
+                <include layout="@layout/p_100" />
+
+                <include layout="@layout/p_101" />
+
+                <include layout="@layout/p_102" />
+
+                <include layout="@layout/p_103" />
+
+                <include layout="@layout/p_104" />
+
+                <include layout="@layout/p_105" />
+
+                <include layout="@layout/p_106" />
+
+                <include layout="@layout/p_107" />
+
+                <include layout="@layout/p_108" />
+
+                <include layout="@layout/p_109" />
+
+                <include layout="@layout/p_110" />
+
+                <include layout="@layout/p_111" />
+
+                <include layout="@layout/p_112" />
+
+                <include layout="@layout/p_113" />
+
+                <include layout="@layout/p_114" />
+
+                <include layout="@layout/p_115" />
+
+                <include layout="@layout/p_116" />
+
+                <include layout="@layout/p_117" />
+
+                <include layout="@layout/p_118" />
+
+                <include layout="@layout/p_119" />
+
+                <include layout="@layout/p_120" />
+
+                <include layout="@layout/p_121" />
+
+                <include layout="@layout/p_122" />
+
+                <include layout="@layout/p_123" />
+
+                <include layout="@layout/p_124" />
+
+                <include layout="@layout/p_125" />
+
+                <include layout="@layout/p_126" />
+
+                <include layout="@layout/p_127" />
+
+                <include layout="@layout/p_128" />
+
+                <include layout="@layout/p_129" />
+
+                <include layout="@layout/p_130" />
+
+                <include layout="@layout/p_131" />
+
+                <include layout="@layout/p_132" />
+
+                <include layout="@layout/p_133" />
+
+                <include layout="@layout/p_134" />
+
+                <include layout="@layout/p_135" />
+
+                <include layout="@layout/p_136" />
+
+                <include layout="@layout/p_137" />
+
+                <include layout="@layout/p_138" />
+
+                <include layout="@layout/p_139" />
+
+                <include layout="@layout/p_140" />
+
+                <include layout="@layout/p_141" />
+
+                <include layout="@layout/p_142" />
+
+                <include layout="@layout/p_143" />
+
+                <include layout="@layout/p_144" />
+
+                <include layout="@layout/p_145" />
+
+                <include layout="@layout/p_146" />
+
+                <include layout="@layout/p_147" />
+
+                <include layout="@layout/p_148" />
+
+                <include layout="@layout/p_149" />
+
+                <include layout="@layout/p_150" />
+
+                <include layout="@layout/p_151" />
+
+                <include layout="@layout/p_152" />
+
+                <include layout="@layout/p_153" />
+
+                <include layout="@layout/p_154" />
+
+                <include layout="@layout/p_155" />
+
+                <include layout="@layout/p_156" />
+
+                <include layout="@layout/p_157" />
+
+                <include layout="@layout/p_158" />
+
+                <include layout="@layout/p_159" />
+
+                <include layout="@layout/p_160" />
+
+                <include layout="@layout/p_161" />
+
+                <include layout="@layout/p_162" />
+
+                <include layout="@layout/p_163" />
+
+                <include layout="@layout/p_164" />
+
+                <include layout="@layout/p_165" />
+
+                <include layout="@layout/p_166" />
+
+                <include layout="@layout/p_167" />
+
+                <include layout="@layout/p_168" />
+
+                <include layout="@layout/p_169" />
+
+                <include layout="@layout/p_170" />
+
+                <include layout="@layout/p_171" />
+
+                <include layout="@layout/p_172" />
+
+                <include layout="@layout/p_173" />
+
+                <include layout="@layout/p_174" />
+
+                <include layout="@layout/p_175" />
+
+                <include layout="@layout/p_176" />
+
+                <include layout="@layout/p_177" />
+
+                <include layout="@layout/p_178" />
+
+                <include layout="@layout/p_179" />
+
+                <include layout="@layout/p_180" />
+
+                <include layout="@layout/p_181" />
+
+                <include layout="@layout/p_182" />
+
+                <include layout="@layout/p_183" />
+
+                <include layout="@layout/p_184" />
+
+                <include layout="@layout/p_185" />
+
+                <include layout="@layout/p_186" />
+
+                <include layout="@layout/p_187" />
+
+                <include layout="@layout/p_188" />
+
+                <include layout="@layout/p_189" />
+
+                <include layout="@layout/p_190" />
+
+                <include layout="@layout/p_191" />
+
+                <include layout="@layout/p_192" />
+
+                <include layout="@layout/p_193" />
+
+                <include layout="@layout/p_194" />
+
+                <include layout="@layout/p_195" />
+
+                <include layout="@layout/p_196" />
+
+                <include layout="@layout/p_197" />
+
+                <include layout="@layout/p_198" />
+
+                <include layout="@layout/p_199" />
+
+                <include layout="@layout/p_200" />
+
+                <include layout="@layout/p_201" />
+
+                <include layout="@layout/p_202" />
+
+                <include layout="@layout/p_203" />
+
+                <include layout="@layout/p_204" />
+
+                <include layout="@layout/p_205" />
+
+                <include layout="@layout/p_206" />
+
+                <include layout="@layout/p_207" />
+
+                <include layout="@layout/p_208" />
+
+                <include layout="@layout/p_209" />
+
+                <include layout="@layout/p_210" />
+
+                <include layout="@layout/p_211" />
+
+                <include layout="@layout/p_212" />
+
+                <include layout="@layout/p_213" />
+
+                <include layout="@layout/p_214" />
+
+                <include layout="@layout/p_215" />
+
+                <include layout="@layout/p_216" />
+
+                <include layout="@layout/p_217" />
+
+                <include layout="@layout/p_218" />
+
+                <include layout="@layout/p_219" />
+
+                <include layout="@layout/p_220" />
+
+                <include layout="@layout/p_221" />
+
+                <include layout="@layout/p_222" />
+
+                <include layout="@layout/p_223" />
+
+                <include layout="@layout/p_224" />
+
+                <include layout="@layout/p_225" />
+
+                <include layout="@layout/p_226" />
+
+                <include layout="@layout/p_227" />
+
+                <include layout="@layout/p_228" />
+
+                <include layout="@layout/p_229" />
+
+                <include layout="@layout/p_230" />
+
+                <include layout="@layout/p_231" />
+
+                <include layout="@layout/p_232" />
+
+                <include layout="@layout/p_233" />
+
+                <include layout="@layout/p_234" />
+
+                <include layout="@layout/p_235" />
+
+                <include layout="@layout/p_236" />
+
+                <include layout="@layout/p_237" />
+
+                <include layout="@layout/p_238" />
+
+                <include layout="@layout/p_239" />
+
+                <include layout="@layout/p_240" />
+
+                <include layout="@layout/p_241" />
+
+                <include layout="@layout/p_242" />
+
+                <include layout="@layout/p_243" />
+
+                <include layout="@layout/p_244" />
+
+                <include layout="@layout/p_245" />
+
+                <include layout="@layout/p_246" />
+
+                <include layout="@layout/p_247" />
+
+                <include layout="@layout/p_248" />
+
+                <include layout="@layout/p_249" />
+
+                <include layout="@layout/p_250" />
+
+                <include layout="@layout/p_251" />
+
+                <include layout="@layout/p_252" />
+
+                <include layout="@layout/p_253" />
+
+                <include layout="@layout/p_254" />
+
+                <include layout="@layout/p_255" />
+
+                <include layout="@layout/p_256" />
+
+                <include layout="@layout/p_257" />
+
+                <include layout="@layout/p_258" />
+
+                <include layout="@layout/p_259" />
+
+                <include layout="@layout/p_260" />
+
+                <include layout="@layout/p_261" />
+
+                <include layout="@layout/p_262" />
+
+                <include layout="@layout/p_263" />
+
+                <include layout="@layout/p_264" />
+
+                <include layout="@layout/p_265" />
+
+                <include layout="@layout/p_266" />
+
+                <include layout="@layout/p_267" />
+
+                <include layout="@layout/p_268" />
+
+                <include layout="@layout/p_269" />
+
+                <include layout="@layout/p_270" />
+
+                <include layout="@layout/p_271" />
+
+                <include layout="@layout/p_272" />
+
+                <include layout="@layout/p_273" />
+
+                <include layout="@layout/p_274" />
+
+                <include layout="@layout/p_275" />
+
+                <include layout="@layout/p_276" />
+
+                <include layout="@layout/p_277" />
+
+                <include layout="@layout/p_278" />
+
+                <include layout="@layout/p_279" />
+
+                <include layout="@layout/p_280" />
+
+                <include layout="@layout/p_281" />
+
+                <include layout="@layout/p_282" />
+
+                <include layout="@layout/p_283" />
+
+                <include layout="@layout/p_284" />
+
+                <include layout="@layout/p_285" />
+
+                <include layout="@layout/p_286" />
+
+                <include layout="@layout/p_287" />
+
+                <include layout="@layout/p_288" />
+
+                <include layout="@layout/p_289" />
+
+                <include layout="@layout/p_290" />
+
+                <include layout="@layout/p_291" />
+
+                <include layout="@layout/p_292" />
+
+                <include layout="@layout/p_293" />
+
+                <include layout="@layout/p_294" />
+
+                <include layout="@layout/p_295" />
+
+                <include layout="@layout/p_296" />
+
+                <include layout="@layout/p_297" />
+
+                <include layout="@layout/p_298" />
+
+                <include layout="@layout/p_299" />
+
+                <include layout="@layout/p_300" />
+
+                <include layout="@layout/p_301" />
+
+                <include layout="@layout/p_302" />
+
+                <include layout="@layout/p_303" />
+
+                <include layout="@layout/p_304" />
+
+                <include layout="@layout/p_305" />
+
+                <include layout="@layout/p_306" />
+
+                <include layout="@layout/p_307" />
+
+                <include layout="@layout/p_308" />
+
+                <include layout="@layout/p_309" />
+
+                <include layout="@layout/p_310" />
+
+                <include layout="@layout/p_311" />
+
+                <include layout="@layout/p_312" />
+
+                <include layout="@layout/p_313" />
+
+                <include layout="@layout/p_314" />
+
+                <include layout="@layout/p_315" />
+
+                <include layout="@layout/p_316" />
+
+                <include layout="@layout/p_317" />
+
+                <include layout="@layout/p_318" />
+
+                <include layout="@layout/p_319" />
+
+                <include layout="@layout/p_320" />
+
+                <include layout="@layout/p_321" />
+
+                <include layout="@layout/p_322" />
+
+                <include layout="@layout/p_323" />
+
+                <include layout="@layout/p_324" />
+
+                <include layout="@layout/p_325" />
+
+                <include layout="@layout/p_326" />
+
+                <include layout="@layout/p_327" />
+
+                <include layout="@layout/p_328" />
+
+                <include layout="@layout/p_329" />
+
+                <include layout="@layout/p_330" />
+
+                <include layout="@layout/p_331" />
+
+                <include layout="@layout/p_332" />
+
+                <include layout="@layout/p_333" />
+
+                <include layout="@layout/p_334" />
+
+                <include layout="@layout/p_335" />
+
+                <include layout="@layout/p_336" />
+
+                <include layout="@layout/p_337" />
+
+                <include layout="@layout/p_338" />
+
+                <include layout="@layout/p_339" />
+
+                <include layout="@layout/p_340" />
+
+                <include layout="@layout/p_341" />
+
+                <include layout="@layout/p_342" />
+
+                <include layout="@layout/p_343" />
+
+                <include layout="@layout/p_344" />
+
+                <include layout="@layout/p_345" />
+
+                <include layout="@layout/p_346" />
+
+                <include layout="@layout/p_347" />
+
+                <include layout="@layout/p_348" />
+
+                <include layout="@layout/p_349" />
+
+                <include layout="@layout/p_350" />
+
+                <include layout="@layout/p_351" />
+
+                <include layout="@layout/p_352" />
+
+                <include layout="@layout/p_353" />
+
+                <include layout="@layout/p_354" />
+
+                <include layout="@layout/p_355" />
+
+                <include layout="@layout/p_356" />
+
+                <include layout="@layout/p_357" />
+
+                <include layout="@layout/p_358" />
+
+                <include layout="@layout/p_359" />
+
+                <include layout="@layout/p_360" />
+
+                <include layout="@layout/p_361" />
+
+                <include layout="@layout/p_362" />
+
+                <include layout="@layout/p_363" />
+
+                <include layout="@layout/p_364" />
+
+                <include layout="@layout/p_365" />
+
+                <include layout="@layout/p_366" />
+
+                <include layout="@layout/p_367" />
+
+                <include layout="@layout/p_368" />
+
+                <include layout="@layout/p_369" />
+
+                <include layout="@layout/p_370" />
+
+                <include layout="@layout/p_371" />
+
+                <include layout="@layout/p_372" />
+
+                <include layout="@layout/p_373" />
+
+                <include layout="@layout/p_374" />
+
+                <include layout="@layout/p_375" />
+
+                <include layout="@layout/p_376" />
+
+                <include layout="@layout/p_377" />
+
+                <include layout="@layout/p_378" />
+
+                <include layout="@layout/p_379" />
+
+                <include layout="@layout/p_380" />
+
+                <include layout="@layout/p_381" />
+
+                <include layout="@layout/p_382" />
+
+                <include layout="@layout/p_383" />
+
+                <include layout="@layout/p_384" />
+
+                <include layout="@layout/p_385" />
+
+                <include layout="@layout/p_386" />
+
+                <include layout="@layout/p_387" />
+
+                <include layout="@layout/p_388" />
+
+                <include layout="@layout/p_389" />
+
+                <include layout="@layout/p_390" />
+
+                <include layout="@layout/p_391" />
+
+                <include layout="@layout/p_392" />
+
+                <include layout="@layout/p_393" />
+
+                <include layout="@layout/p_394" />
+
+                <include layout="@layout/p_395" />
+
+                <include layout="@layout/p_396" />
+
+                <include layout="@layout/p_397" />
+
+                <include layout="@layout/p_398" />
+
+                <include layout="@layout/p_399" />
+
+                <include layout="@layout/p_400" />
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="New Problems Comming Soon...."
+                    android:fontFamily="@font/helveticalight"
+                    android:textSize="14sp"
+                    android:textStyle="italic|bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:shadowDy="@integer/material_motion_duration_long_1"
+                    android:background="#100F0F"
+                    android:textColor="#EFE9E9">
+                </TextView>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

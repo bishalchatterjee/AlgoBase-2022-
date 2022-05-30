@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="theme_back">#000000</color>
+    <color name="theme_text">#FFFFFF</color>
+    <color name="theme_menu_options">#DDDDDD</color>
+    <color name="theme_background_gradient1">#1E2239</color>
+    <color name="theme_background_gradient2">#0B0B0B</color>
+    <color name="theme_cv">#222020</color>
+    <color name="theme_cv_text">#FFFFFF</color>
+    <color name="slider_unselectedIndicator">#48000000</color>
+    <color name="slider_selectedIndicator">#C4000000</color>
+
+    //BottomNavigation
+    <color name="mbn_circleColor">#B41E1C1C</color>
+    <color name="mbn_selectedIconColor">#FFFFFF</color>
+    <color name="mbn_countTextColor">#000000</color>
+    <color name="mbn_countBackgroundColor">#85EFFF</color>
+    <color name="mbn_defaultIconColor">#FFFFFF</color>
+    <color name="mbn_backgroundBottomColor">#000000</color>
+    <color name="mbn_shadowColor">#F6F3F3</color>
+    <color name="mbn_rippleColor">#8AF0FF</color>
+</resources>
