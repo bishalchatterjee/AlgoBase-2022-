@@ -65,22 +65,6 @@ tools:context=".ProblemsFragment"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:text="Arrays [27 Problems]"
-                    android:fontFamily="@font/helveticalight"
-                    android:textSize="20dp"
-                    android:textStyle="italic|bold"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:gravity="center"
-                    android:shadowDy="@integer/material_motion_duration_long_1"
-                    android:background="@drawable/simple_back"
-                    android:textColor="@color/theme_text">
-                </TextView>
-
 
                 <include layout="@layout/p_1" />
 

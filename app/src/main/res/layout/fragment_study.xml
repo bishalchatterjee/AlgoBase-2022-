@@ -60,10 +60,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="15dp"
-                app:cardElevation="5dp"
                 android:layout_marginBottom="15dp"
                 app:cardBackgroundColor="@color/theme_cv"
-                app:cardCornerRadius="10dp">
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -86,16 +86,14 @@
                         app:sliderIndicatorSelectedColor="@color/slider_selectedIndicator"
                         app:sliderIndicatorUnselectedColor="@color/slider_unselectedIndicator"
                         app:sliderScrollTimeInSec="2"
-                        app:sliderStartAutoCycle="true">
-                    </com.smarteist.autoimageslider.SliderView>
+                        app:sliderStartAutoCycle="true"></com.smarteist.autoimageslider.SliderView>
 
                     <ImageView
+                        android:id="@+id/customAlertFirebase_img"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:id="@+id/customAlertFirebase_img"
-                        android:scaleType="centerCrop"
-                        android:adjustViewBounds="true">
-                    </ImageView>
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"></ImageView>
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -142,6 +140,39 @@
 
                 </LinearLayout>
 
+                <TextView
+                    android:id="@+id/customAlertFirebase_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/firebase_alert_back"
+                    android:fontFamily="@font/helveticabold"
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="17dp" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_alignStart="@+id/send_Btn"
+                    android:layout_alignEnd="@+id/send_Btn"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    app:layout_constraintEnd_toEndOf="@+id/customAlertFirebase_tv"
+                    app:layout_constraintStart_toStartOf="@+id/customAlertFirebase_tv"
+                    app:lottie_autoPlay="false"
+                    app:lottie_loop="false"
+                    app:lottie_rawRes="@raw/lottie_empty_inbox"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="28dp" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -149,16 +180,15 @@
 
         <ImageView
             android:id="@+id/firebase_showAlert"
-            android:layout_width="37dp"
-            android:layout_height="39dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="8dp"
-            android:src="@drawable/calander_vector"
+            android:layout_width="27dp"
+            android:layout_height="29dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/news"
             android:tint="@color/theme_text"
-            app:layout_constraintBottom_toBottomOf="@+id/textView"
-            app:layout_constraintEnd_toEndOf="@+id/textView"
-            app:layout_constraintTop_toTopOf="@+id/textView"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintBottom_toBottomOf="@+id/menu_iv"
+            app:layout_constraintEnd_toStartOf="@+id/menu_iv"
+            app:layout_constraintTop_toTopOf="@+id/menu_iv"
+            tools:ignore="MissingConstraints" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

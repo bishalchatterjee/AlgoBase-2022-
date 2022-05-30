@@ -14,11 +14,13 @@ import android.view.animation.AnimationSet;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.bumptech.glide.Glide;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -37,6 +39,8 @@ public class StudyFragment extends Fragment {
             compiler1_iv;
 
     ImageView firebase_alert_img,firebase_showAlert;
+    TextView customAlertFirebase_tv;
+    LottieAnimationView animationView2;
 
     SliderView sliderView;
     int[] images={R.drawable.vf_1,
@@ -61,6 +65,14 @@ public class StudyFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_study, container, false);
 
         menu_iv = view.findViewById(R.id.menu_iv);
+
+        //lottie animation declaration
+        animationView2=view.findViewById(R.id.animation_view2);
+        animationView2.setVisibility(View.GONE);
+
+
+        customAlertFirebase_tv = view.findViewById(R.id.customAlertFirebase_tv);
+        customAlertFirebase_tv.setVisibility(View.GONE);
 
         firebase_alert_img =view.findViewById(R.id.customAlertFirebase_img);
         firebase_alert_img.setVisibility(View.GONE);
@@ -147,7 +159,8 @@ public class StudyFragment extends Fragment {
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
         DatabaseReference databaseReference = firebaseDatabase.getReference();
 
-        DatabaseReference getImage = databaseReference.child("Images");
+        DatabaseReference getImage = databaseReference.child("PictureAlerts");
+        DatabaseReference getText = databaseReference.child("Announcement");
 
 
         getImage.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -157,6 +170,26 @@ public class StudyFragment extends Fragment {
                 // relative path and getting in the link variable
                 String link = dataSnapshot.getValue(String.class);
                 Glide.with(StudyFragment.this).load(link).into(firebase_alert_img);
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+            }
+        });
+        getText.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                // getting a DataSnapshot for the location at the specified
+                // relative path and getting in the link variable
+                String alert_text = dataSnapshot.getValue(String.class).replace("\\n","\n");
+                if(alert_text.equals("")){
+                    customAlertFirebase_tv.setVisibility(View.GONE);
+                            animationView2.setVisibility(View.VISIBLE);
+                            animationView2.playAnimation();
+
+                }
+                    customAlertFirebase_tv.setText(alert_text);
             }
 
             @Override
@@ -176,11 +209,13 @@ public class StudyFragment extends Fragment {
         firebase_showAlert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(),"Loading Event Details",Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(),"Loading Details",Toast.LENGTH_LONG).show();
                 firebase_alert_img.setVisibility(View.VISIBLE);
+                customAlertFirebase_tv.setVisibility(View.VISIBLE);
                 new Handler().postDelayed(new Runnable(){
                     public void run() {
                         firebase_alert_img.setVisibility(View.GONE);
+                        customAlertFirebase_tv.setVisibility(View.GONE);
                     }
                 }, 10000);
             }
@@ -783,7 +818,6 @@ public class StudyFragment extends Fragment {
 
 
         });
-
 
         //end of Online Compilers on click listeners
 
