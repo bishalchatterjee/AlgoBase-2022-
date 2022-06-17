@@ -49,22 +49,38 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
                 android:fontFamily="@font/helvetica"
-                android:text="1. Singly Linked List."
+                android:text="1. Singly Linked List. \n\nSingly Linked List: It is the simplest type of linked list in which every node contains some data and a pointer to the next node of the same data type. The node contains a pointer to the next node means that the node stores the address of the next node in the sequence."
                 android:textColor="@color/theme_text"
                 android:textIsSelectable="false"
                 android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:srcCompat="@drawable/singly_linked_list" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
                 android:fontFamily="@font/helvetica"
-                android:text="2. Doubly Linked List."
+                android:text="2. Doubly Linked List. \n\nDoubly Linked List is a variation of Linked list in which navigation is possible in both ways, either forward and backward easily as compared to Single Linked List."
                 android:textColor="@color/theme_text"
                 android:textIsSelectable="false"
                 android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:srcCompat="@drawable/doubly_linked_list" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -72,8 +88,30 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
                 android:fontFamily="@font/helvetica"
-                android:text="3. Circular Linked List."
+                android:text="3. Circular Linked List. \n\nA circular linked list is a variation of a linked list in which the last node points to the first node, completing a full circle of nodes. In other words, this variation of the linked list doesn't have a null element at the end."
+                android:textColor="@color/theme_text"
+                android:textIsSelectable="false"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:srcCompat="@drawable/circular_linked_list" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helveticalight"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Know More:\nhttps://www.geeksforgeeks.org/data-structures/linked-list/"
+                android:linksClickable="true"
+                android:autoLink="web"
                 android:textColor="@color/theme_text"
                 android:textIsSelectable="false"
                 android:textSize="20dp" />
@@ -93,4 +131,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/linkedlist_info_banner" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

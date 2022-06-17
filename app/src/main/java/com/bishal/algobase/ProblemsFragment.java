@@ -27,6 +27,7 @@ public class ProblemsFragment extends Fragment {
              problem31,problem32,problem33,problem34,problem35,problem36,problem37,problem38,problem39,problem40;
 
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -38,6 +39,7 @@ public class ProblemsFragment extends Fragment {
 
 
         menu_iv=view.findViewById(R.id.menu_iv);
+
 
 
         problem1=view.findViewById(R.id.p_1);

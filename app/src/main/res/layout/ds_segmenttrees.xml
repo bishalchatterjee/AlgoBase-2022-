@@ -34,6 +34,13 @@
                 android:textIsSelectable="false"
                 android:textSize="20dp" />
 
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/segment_tree" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -44,6 +51,21 @@ Like Heap, the segment tree is also represented as an array. The difference here
 \n\n\nBelow is memory representation of segment tree for input array \n{1, 3, 5, 7, 9, 11}
 \nst[] = {36, 9, 27, 4, 5, 16, 11, 1, 3, DUMMY, DUMMY, 7, 9, DUMMY, DUMMY}
 \nThe dummy values are never accessed and have no use.\n\n\n This is some wastage of space due to simple array representation. We may optimize this wastage using some clever implementations, but code for sum and update becomes more complex."
+                android:textColor="@color/theme_text"
+                android:textIsSelectable="false"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helveticalight"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:text="\nKnow More:\nhttps://cp-algorithms.com/data_structures/segment_tree.html"
+                android:linksClickable="true"
+                android:autoLink="web"
                 android:textColor="@color/theme_text"
                 android:textIsSelectable="false"
                 android:textSize="20dp" />

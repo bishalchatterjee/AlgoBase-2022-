@@ -9,27 +9,27 @@
 
     <LinearLayout
         android:id="@+id/Youtube_Layout"
-        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp">
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-            android:background="@drawable/thin_border"
-            android:padding="10dp"
             android:id="@+id/youtube_player_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/thin_border"
+            android:padding="10dp"
             app:autoPlay="false"
+            app:showFullScreenButton="true"
             app:showSeekBar="true"
             app:showVideoCurrentTime="true"
             app:showVideoDuration="true"
-            app:showYouTubeButton="false"
-            app:showFullScreenButton="true"/>
+            app:showYouTubeButton="false" />
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -54,7 +54,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
 
                 <include layout="@layout/ds_item_1" />
 

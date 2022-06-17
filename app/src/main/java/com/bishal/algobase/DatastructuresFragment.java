@@ -252,6 +252,177 @@ public class DatastructuresFragment extends Fragment {
             }
         });
 
+
+        visualise_img2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                visualise_img2.startAnimation(animSet);
+                Youtube_Layout.setVisibility(View.VISIBLE);
+                MainArea.setVisibility(View.GONE);
+                YouTubePlayerView youTubePlayerView = view.findViewById(R.id.youtube_player_view);
+                getLifecycle().addObserver(youTubePlayerView);
+
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                        String videoId = "TWMCMvfEAv4";
+                        youTubePlayer.loadVideo(videoId, 0);
+                    }
+                });
+            }
+        });
+
+        visualise_img3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                visualise_img3.startAnimation(animSet);
+                Youtube_Layout.setVisibility(View.VISIBLE);
+                MainArea.setVisibility(View.GONE);
+                YouTubePlayerView youTubePlayerView = view.findViewById(R.id.youtube_player_view);
+                getLifecycle().addObserver(youTubePlayerView);
+
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                        String videoId = "oI0QhFzBSRo";
+                        youTubePlayer.loadVideo(videoId, 0);
+                    }
+                });
+            }
+        });
+
+        visualise_img4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                visualise_img4.startAnimation(animSet);
+                Youtube_Layout.setVisibility(View.VISIBLE);
+                MainArea.setVisibility(View.GONE);
+                YouTubePlayerView youTubePlayerView = view.findViewById(R.id.youtube_player_view);
+                getLifecycle().addObserver(youTubePlayerView);
+
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                        String videoId = "7m1DMYAbdiY";
+                        youTubePlayer.loadVideo(videoId, 0);
+                    }
+                });
+            }
+        });
+
+        visualise_img5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                visualise_img5.startAnimation(animSet);
+                Youtube_Layout.setVisibility(View.VISIBLE);
+                MainArea.setVisibility(View.GONE);
+                YouTubePlayerView youTubePlayerView = view.findViewById(R.id.youtube_player_view);
+                getLifecycle().addObserver(youTubePlayerView);
+
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                        String videoId = "va_6RmSrKCg";
+                        youTubePlayer.loadVideo(videoId, 0);
+                    }
+                });
+            }
+        });
+
+        visualise_img6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                visualise_img6.startAnimation(animSet);
+                Youtube_Layout.setVisibility(View.VISIBLE);
+                MainArea.setVisibility(View.GONE);
+                YouTubePlayerView youTubePlayerView = view.findViewById(R.id.youtube_player_view);
+                getLifecycle().addObserver(youTubePlayerView);
+
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                        String videoId = "ywx-Onrdx4U";
+                        youTubePlayer.loadVideo(videoId, 0);
+                    }
+                });
+            }
+        });
+
+        visualise_img7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                visualise_img7.startAnimation(animSet);
+                Youtube_Layout.setVisibility(View.VISIBLE);
+                MainArea.setVisibility(View.GONE);
+                YouTubePlayerView youTubePlayerView = view.findViewById(R.id.youtube_player_view);
+                getLifecycle().addObserver(youTubePlayerView);
+
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                        String videoId = "TwdjOQMTaQ4";
+                        youTubePlayer.loadVideo(videoId, 0);
+                    }
+                });
+            }
+        });
+
+        visualise_img8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                visualise_img8.startAnimation(animSet);
+                Youtube_Layout.setVisibility(View.VISIBLE);
+                MainArea.setVisibility(View.GONE);
+                YouTubePlayerView youTubePlayerView = view.findViewById(R.id.youtube_player_view);
+                getLifecycle().addObserver(youTubePlayerView);
+
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                        String videoId = "3CbFFVHQrk4";
+                        youTubePlayer.loadVideo(videoId, 0);
+                    }
+                });
+            }
+        });
+
+        visualise_img9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                visualise_img9.startAnimation(animSet);
+                Youtube_Layout.setVisibility(View.VISIBLE);
+                MainArea.setVisibility(View.GONE);
+                YouTubePlayerView youTubePlayerView = view.findViewById(R.id.youtube_player_view);
+                getLifecycle().addObserver(youTubePlayerView);
+
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                        String videoId = "-dUiRtJ8ot0";
+                        youTubePlayer.loadVideo(videoId, 0);
+                    }
+                });
+            }
+        });
+
+        visualise_img10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                visualise_img10.startAnimation(animSet);
+                Youtube_Layout.setVisibility(View.VISIBLE);
+                MainArea.setVisibility(View.GONE);
+                YouTubePlayerView youTubePlayerView = view.findViewById(R.id.youtube_player_view);
+                getLifecycle().addObserver(youTubePlayerView);
+
+                youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                        String videoId = "zEAmQqOpfzM";
+                        youTubePlayer.loadVideo(videoId, 0);
+                    }
+                });
+            }
+        });
         return view;
     }
 

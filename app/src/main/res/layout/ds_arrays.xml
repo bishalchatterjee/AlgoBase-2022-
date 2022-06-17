@@ -42,29 +42,57 @@
                 android:textColor="@color/theme_text"
                 android:textIsSelectable="false"
                 android:textSize="20dp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/helvetica"
                 android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
                 android:layout_marginStart="20dp"
-                android:text="1. One Dimensional Array"
+                android:text="1. One Dimensional Array. \n\nA One-Dimensional Array is the simplest form of an Array in which the elements are stored linearly and can be accessed individually by specifying the index value of each element stored in the array."
                 android:textColor="@color/theme_text"
                 android:textIsSelectable="false"
                 android:textSize="20dp"/>
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/array_one" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/helvetica"
                 android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
                 android:layout_marginStart="20dp"
-                android:text="2. Multi Dimensional Array"
+                android:text="2. Multi Dimensional Array.\n\nA multidimensional array is an array with more than two dimensions. In a matrix, the two dimensions are represented by rows and columns. Each element is defined by two subscripts, the row index and the column index."
                 android:textColor="@color/theme_text"
                 android:textIsSelectable="false"
                 android:textSize="20dp" />
 
 
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/array_two" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helveticalight"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:text="Know More:\nhttps://www.geeksforgeeks.org/array-data-structure/"
+                android:linksClickable="true"
+                android:autoLink="web"
+                android:textColor="@color/theme_text"
+                android:textIsSelectable="false"
+                android:textSize="20dp" />
         </LinearLayout>
     </ScrollView>
 

@@ -35,7 +35,7 @@ import com.smarteist.autoimageslider.SliderView;
 public class StudyFragment extends Fragment {
     ImageView menu_iv, androiddev_iv, angular_iv, backend_iv, cn_iv, cp_iv, dbms_iv, devops_iv, frontend_iv, java_iv, ml_iv, oops_iv, os_iv, python_iv, react_iv, placements_iv,
             book1_iv, book2_iv, book3_iv, book4_iv, book5_iv, book6_iv, book7_iv, book8_iv, book9_iv, book10_iv, book11_iv, book12_iv, book13_iv, book14_iv, book15_iv, book16_iv, book17_iv,
-            site1_iv, site2_iv, site3_iv, site4_iv, site5_iv, site6_iv, site7_iv, site8_iv, site9_iv, site10_iv,
+            site1_iv, site2_iv, site3_iv, site4_iv, site5_iv, site6_iv, site7_iv, site8_iv, site9_iv, site10_iv,site11_iv,
             compiler1_iv;
 
     ImageView firebase_alert_img,firebase_showAlert;
@@ -129,6 +129,7 @@ public class StudyFragment extends Fragment {
         site8_iv = view.findViewById(R.id.site8_iv);
         site9_iv = view.findViewById(R.id.site9_iv);
         site10_iv = view.findViewById(R.id.site10_iv);
+        site11_iv = view.findViewById(R.id.site11_iv);
 
         //online compilers
         compiler1_iv = view.findViewById(R.id.compiler1_iv);
@@ -209,7 +210,6 @@ public class StudyFragment extends Fragment {
         firebase_showAlert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(),"Loading Details",Toast.LENGTH_LONG).show();
                 firebase_alert_img.setVisibility(View.VISIBLE);
                 customAlertFirebase_tv.setVisibility(View.VISIBLE);
                 new Handler().postDelayed(new Runnable(){
@@ -801,6 +801,16 @@ public class StudyFragment extends Fragment {
                 startActivity(i);
             }
         });
+        site11_iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //calling webActivity class
+                Intent i = new Intent(getActivity(), WebActivity.class);
+                i.putExtra("Link", "https://stackoverflow.com/");
+                startActivity(i);
+            }
+        });
 
 
         //end of websites on click listeners
@@ -812,7 +822,8 @@ public class StudyFragment extends Fragment {
             public void onClick(View v) {
                 //calling webActivity class
                 Intent i = new Intent(getActivity(), WebActivity.class);
-                i.putExtra("Link", "https://ideone.com/");
+//                i.putExtra("Link", "https://ideone.com/");
+                i.putExtra("Link", "https://stackoverflow.com/");
                 startActivity(i);
             }
 
